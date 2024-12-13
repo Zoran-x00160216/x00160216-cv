@@ -53,7 +53,7 @@
     .flex-grade-btn {
         display: flex;
         flex-direction: column; /* Arrange items vertically */
-        gap: 10px; /* Optional: Adds space between items */
+        gap: 10px; /*  Adds space between items */
       }
 
       #main .img {

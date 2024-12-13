@@ -236,7 +236,7 @@ i {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 /* Navbar */
@@ -297,58 +297,7 @@ i {
     padding: .5rem;
 }
 
-/* Contact form */
-#contact {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: var(--white);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-}
 
-#contact .contact-container {
-    position: absolute;
-    width: 40%;
-    height: 60%;
-    background-color: var(--light);
-    padding: 2rem;
-    /* border-radius: 10px; */
-}
-
-
-#contact .contact-close-menu {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    font-size: var(--h2);
-    cursor: pointer;
-}
-
-#contact input,
-#contact textarea {
-    width: 40%;
-    outline: none;
-    background-color: var(--white);
-    /* border-radius: 5px; */
-    border: none;
-    padding: .2rem;
-    margin-top: .3rem;
-}
-
-#contact textarea {
-    width: 60%;
-
-}
-
-#contact .btn {
-    margin: .3rem 0 1rem 0;
-
-}
 
 /* Display grid all items in this section  */
 
@@ -356,6 +305,9 @@ i {
     text-align: center;
 }
 
+#main {
+    position: relative;
+}
 
 #main .grid {
     max-width: 1100px;
@@ -562,9 +514,9 @@ i {
 /* About page */
 
 #show-case-about {
-    position: relative;
-    top: 0;
-    height: 120%;
+    position: absolute;
+    top: 5%;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -677,4 +629,57 @@ i {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* Contact form */
+#contact {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--white);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+#contact .contact-container {
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    background-color: var(--light);
+    padding: 2rem;
+    /* border-radius: 10px; */
+}
+
+
+#contact .contact-close-menu {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: var(--h2);
+    cursor: pointer;
+}
+
+#contact input,
+#contact textarea {
+    width: 40%;
+    outline: none;
+    background-color: var(--white);
+    /* border-radius: 5px; */
+    border: none;
+    padding: .2rem;
+    margin-top: .3rem;
+}
+
+#contact textarea {
+    width: 60%;
+
+}
+
+#contact .btn {
+    margin: .3rem 0 1rem 0;
+
 }
