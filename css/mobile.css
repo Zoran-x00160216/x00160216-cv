@@ -16,6 +16,13 @@
         background-position: center;
     }
 
+    .grid-table {
+        max-width: 900px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
     #main .logo-icon {
         font-size: 2rem;
     }
@@ -43,7 +50,17 @@
     :root {
         --base-size: .7rem;
     }
+    .flex-grade-btn {
+        display: flex;
+        flex-direction: column; /* Arrange items vertically */
+        gap: 10px; /* Optional: Adds space between items */
+      }
 
+      #main .img {
+        /* position: absolute; */
+        height: 80vh;
+        width: auto;
+    }
     #navbar {
         display: block;
     }
