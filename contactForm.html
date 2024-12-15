@@ -15,6 +15,7 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
+
     <title>Zoran Railic || Contact</title>
   </head>
 
@@ -26,10 +27,16 @@
           <div class="contact-close-menu">
             <a id="closeMenu"><i class="fas fa-times"></i></a>
           </div>
-          <form id="submitForm">
+          <form id="submitForm" novalidate>
             <div class="input-group mb-2">
               <span class="input-group-text">Full name</span>
-              <input type="text" aria-label="Full name" class="form-control" />
+              <input
+                type="text"
+                aria-label="Full name"
+                class="form-control"
+                id="fullName"
+                required
+              />
             </div>
             <div class="input-group mb-2">
               <label for="exampleInputEmail1" class="form-label"
@@ -40,11 +47,19 @@
                 class="form-control"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
+                required
               />
+              <div
+                class="invalid-feedback text-danger"
+                id="emailError"
+                style="display: none"
+              >
+                Email is invalid.
+              </div>
               <div>
-                <small id="emailHelp" class="form-text"
-                  >We'll never share your email with anyone else.</small
-                >
+                <small id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </small>
               </div>
             </div>
 
@@ -54,18 +69,21 @@
                 class="form-control"
                 aria-label="With textarea"
                 rows="5"
+                id="note"
               ></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
       </section>
+
       <!-- Popup content -->
-      <div id="popup">
+      <div id="popup" style="display: none">
         <p>Your form has been submitted!</p>
       </div>
     </div>
-    <!-- Script for contact pop up and success screen  -->
+
+    <!-- Script for contact pop up and success screen -->
     <script src="./js/contact.js"></script>
   </body>
 </html>

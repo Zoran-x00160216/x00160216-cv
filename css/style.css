@@ -180,7 +180,7 @@ i {
 .text-start {
     text-align: start;
 }
-
+.text-danger {color: #dc3545;}
 .container {
     max-width: 900px;
     padding: 2rem;
@@ -661,7 +661,7 @@ i {
 #contact .contact-container {
     position: absolute;
     width: 40%;
-    height: 60%;
+    height: 70%;
     background-color: var(--light);
     padding: 2rem;
     /* border-radius: 10px; */
