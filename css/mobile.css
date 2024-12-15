@@ -225,7 +225,10 @@
         margin-bottom: 1rem;
     }
 
-
+    #contact .contact-container {
+        width: 80%;
+        height: auto;
+    }
 
     #show-case-about .wrapper {
         grid-template-columns: 1fr;
