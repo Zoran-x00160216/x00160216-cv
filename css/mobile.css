@@ -34,7 +34,7 @@
     /* contacts */
     #contact .contact-container {
         width: 80%;
-        height: auto;
+        height: 50%;
     }
 
     #contact input,
@@ -53,14 +53,21 @@
     .flex-grade-btn {
         display: flex;
         flex-direction: column; /* Arrange items vertically */
-        gap: 10px; /*  Adds space between items */
+        gap: 10px; /* Optional: Adds space between items */
       }
 
       #main .img {
         /* position: absolute; */
-        height: 80vh;
-        width: auto;
+        height: auto;
+        width: 90vw;
     }
+
+    #main .grid-item {
+
+        height: auto;
+        padding: 1rem;
+    }
+
     #navbar {
         display: block;
     }
