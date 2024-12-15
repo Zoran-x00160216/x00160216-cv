@@ -199,9 +199,9 @@ i {
 /* Fading animation */
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 2.5s;
+    -webkit-animation-duration: 1s;
     animation-name: fade;
-    animation-duration: 2.5s;
+    animation-duration: 1s;
 }
 
 @-webkit-keyframes fade {
@@ -321,15 +321,28 @@ i {
 
 #main .grid-item {
     position: relative;
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem; */
     margin: 1rem;
     padding: 1rem;
     box-shadow: 0 0 12px 3px rgba(150, 150, 150, 0.1), 0 0 12px 3px rgba(150, 150, 150, 0.1);
 
 }
 
+
+#main .grid-item2 {
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-row: 2;
+    /* grid-gap: 0.rem; */
+
+}
+
 #main .img {
     /* position: absolute; */
-    height: 50vh;
+    height: 60vh;
     width: auto;
     /* border-radius: 10px; */
     background-size: cover;
@@ -350,7 +363,7 @@ i {
     height: 100%;
     width: 100%;
     margin: auto;
-    padding: 3rem;
+    padding: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -358,9 +371,9 @@ i {
     flex-direction: column;
 }
 
-#main .grid .btn {
-    right: 50% - s;
-}
+/* #main .grid .btn {
+    right: 50%;
+} */
 
 #main .text-img {
     transition: all 1s ease;
@@ -638,11 +651,11 @@ i {
     left: 0;
     height: 100vh;
     width: 100vw;
-    background-color: var(--white);
-    display: none;
+    /* background-color: transparent; */
+    display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 10;
+    
 }
 
 #contact .contact-container {
@@ -682,4 +695,20 @@ i {
 #contact .btn {
     margin: .3rem 0 1rem 0;
 
+}
+
+/* pop up */
+#popup {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Perfect center */
+    width: 30vw; /* 30% of the viewport width */
+    height: 20vh; /* 20% of the viewport height */
+    background-color: var(--primary);
+    color: var(--gray);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
 }

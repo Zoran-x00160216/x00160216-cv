@@ -35,19 +35,3 @@ const nav = function () {
     });
 }
 nav();
-
-
-
-const con = function () {
-    // Display contact card
-    const contact = document.querySelector('#contact');
-    document.querySelector('.display-contact').addEventListener('click', (e) => {
-        contact.style.display = 'flex';
-        e.preventDefault();
-    });
-    document.querySelector('.contact-close-menu').addEventListener('click', (e) => {
-        contact.style.display = 'none';
-        e.preventDefault();
-    });
-}
-con();

@@ -32,7 +32,7 @@ const gradesData = {
     "Year 3": {
         "GPA": 3.50,
         "Courses": {
-            "Project": "A",
+            "Project, Full-Stack App (ReactJS, NodeJS, MongoDB)": "A",
             "Big Data Technologies": "A",
             "IT Scripting & Automation": "A",
             "Advanced Routing & Switching": "A",

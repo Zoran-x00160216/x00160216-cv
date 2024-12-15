@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <title>Zoran Railic || Contact</title>
+  </head>
+
+  <body class="fade">
+    <!-- particles.js container -->
+    <div id="particles-js">
+      <section id="contact">
+        <div class="contact-container">
+          <div class="contact-close-menu">
+            <a id="closeMenu"><i class="fas fa-times"></i></a>
+          </div>
+          <form id="submitForm">
+            <div class="input-group mb-2">
+              <span class="input-group-text">Full name</span>
+              <input type="text" aria-label="Full name" class="form-control" />
+            </div>
+            <div class="input-group mb-2">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <div>
+                <small id="emailHelp" class="form-text"
+                  >We'll never share your email with anyone else.</small
+                >
+              </div>
+            </div>
+
+            <div class="input-group">
+              <p><span class="input-group-text">Leave a note:</span></p>
+              <textarea
+                class="form-control"
+                aria-label="With textarea"
+                rows="5"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </section>
+      <!-- Popup content -->
+      <div id="popup">
+        <p>Your form has been submitted!</p>
+      </div>
+    </div>
+    <!-- Script for contact pop up and success screen  -->
+    <script src="./js/contact.js"></script>
+  </body>
+</html>

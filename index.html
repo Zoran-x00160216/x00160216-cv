@@ -40,7 +40,9 @@
                   <li><a href="about.html">About Me</a></li>
                   <li><a href="#experience">Experience</a></li>
                   <li>
-                    <a href="#contact" class="display-contact">Contact</a>
+                    <a href="contactForm.html" class="display-contact"
+                      >Contact</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -86,18 +88,33 @@
         <article class="grid-item">
           <div
             class="img"
-            style="
-              background-image: url(./img/index-main/stanislav-kondratiev-6pO3QFkk7hQ-unsplash.png);
-            "
+            style="background-image: url(./img/index-main/experience.jpg)"
           ></div>
           <div class="text-icon">
-            <div class="logo-icon"><i class="fas fa-book-open"></i></div>
+            <div class="logo-icon"></div>
             <div class="text-img">
-              <div>
-                <button type="button" id="btn-cv" class="btn btn-primary mb-2">
-                  See C.V
-                </button>
+              <div class="p2">
+                <p>Westermo Ireland 2021 - present</p>
+                <p>
+                  <small>
+                    Managing and optimizing network infrastructure, ensuring
+                    high availability, reliability, and security across
+                    enterprise environments. Administering virtualization
+                    technologies, including VMware, Hyper-V, and KVM, to support
+                    scalable and efficient infrastructure.
+                    <br />Utilizing Docker containers and Ansible for efficient
+                    deployment, automation, and configuration management.
+                    Managing cloud platforms like AWS (IMS, S3, EC2) and Azure
+                    AD, streamlining cloud operations and enhancing platform
+                    integration.</small
+                  >
+                </p>
               </div>
+            </div>
+            <div>
+              <button type="button" id="btn-cv" class="btn btn-primary mb-2">
+                Download C.V.
+              </button>
             </div>
           </div>
         </article>
@@ -119,56 +136,25 @@
       <a href="#"><i class="fas fa-chevron-up"></i></a>
     </div>
 
-    <section id="contact">
-      <div class="contact-container fade">
-        <h3 class="active py1">Contact</h3>
-        <div class="contact-close-menu">
-          <a><i class="fas fa-times"></i></a>
-        </div>
-        <form>
-          <div class="form-div">
-            <input
-              type="text"
-              class="firstName"
-              id="firstName"
-              placeholder="Name"
-            />
-          </div>
-          <div class="form-div">
-            <input type="email" name="email" id="email" placeholder="email" />
-          </div>
-          <div class="form-div">
-            <textarea
-              type="massage"
-              id="message"
-              placeholder="Enter Message"
-            ></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-          <p>
-            <a href="tel:+353831626126"
-              ><small>Call me: +353 83 1626 126</small></a
-            >
-          </p>
-        </form>
-      </div>
-    </section>
-
     <footer id="footer">
       <div class="container">
         <div class="wrapper">
           <div class="links">
             <ul>
+              <li><a href="index.html">Home</a></li>
               <li>
-                <a href="index.html" class="active">Home</a>
+                <a href="about.html" class="active">About</a>
               </li>
-              <li><a href="About.html">About Me</a></li>
-              <li><a href="#experience">Experience</a></li>
+              <li><a href="index.html#experience">Experience</a></li>
+              <li>
+                <a href="contactForm.html" class="display-contact"
+                  >Contact Form</a
+                >
+              </li>
             </ul>
           </div>
           <div class="links">
             <ul>
-              <li>Contact</li>
               <li>
                 <a href="tel:+353831626126"><small>+353 83 1626 126</small></a>
               </li>
